@@ -35,7 +35,7 @@ footer{gap:42px}.footer-identity{display:grid;gap:12px;text-align:left}.footer-i
 @media(max-width:700px){.flavors-heading .flavors-prompt{margin-top:24px}}
 
 /* Individual decoration photo caption */
-.custom-photo>span{top:1cm;padding:0;border:0;border-radius:0;background:none;box-shadow:none;color:#f8e8e2;font:400 30px/1.2 'Rosamunda One','Prata',Georgia,serif;text-shadow:0 2px 8px rgba(34,8,18,.4)}
+.custom-photo>span{top:28px;right:0;left:0;width:100%;padding:0 20px;border:0;border-radius:0;background:none;box-shadow:none;color:#ffd166;font:400 clamp(20px,2.1vw,30px)/1.2 'Rosamunda One','Prata',Georgia,serif;text-align:center;text-shadow:0 2px 10px rgba(34,8,18,.75);white-space:nowrap;transform:none}
 
 /* Prevent page-level overflow while preserving horizontal product carousels */
 html,body{max-width:100%;overflow-x:hidden}
@@ -63,5 +63,5 @@ html,body{max-width:100%;overflow-x:hidden}
   .hero-facts{width:100%;max-width:100%;box-sizing:border-box;gap:16px;flex-wrap:wrap}
   .hero-facts li{max-width:100%}
 
-  .custom-photo>span{width:fit-content;max-width:78%;font-size:clamp(18px,5.5vw,28px);line-height:1.2;text-align:center;top:1cm;right:12px;left:auto;transform:none}
+  .custom-photo>span{top:22px;right:0;left:0;width:100%;max-width:none;padding:0 10px;font-size:clamp(14px,4.2vw,20px);line-height:1.2;text-align:center;white-space:nowrap;transform:none}
 }
