@@ -35,7 +35,7 @@ footer{gap:42px}.footer-identity{display:grid;gap:12px;text-align:left}.footer-i
 @media(max-width:700px){.flavors-heading .flavors-prompt{margin-top:24px}}
 
 /* Individual decoration photo caption */
-.custom-photo>span{top:4%;padding:14px 18px;border:1px solid rgba(213,170,120,.9);border-radius:8px;background:rgba(255,248,238,.92);box-shadow:0 8px 26px rgba(34,8,18,.28);color:var(--wine);font:600 italic 19px/1.45 Georgia,serif;text-shadow:none}
+.custom-photo>span{top:1cm;padding:0;border:0;border-radius:0;background:none;box-shadow:none;color:#f8e8e2;font:400 30px/1.2 'Rosamunda One','Prata',Georgia,serif;text-shadow:0 2px 8px rgba(34,8,18,.4)}
 
 /* Prevent page-level overflow while preserving horizontal product carousels */
 html,body{max-width:100%;overflow-x:hidden}
@@ -44,11 +44,11 @@ html,body{max-width:100%;overflow-x:hidden}
 .product-grid p{font-size:14px;font-weight:600}
 
 /* Brand logo */
-.brand-logo-wrap{display:inline-flex;align-items:center;justify-content:center;width:max-content;background:rgba(248,243,235,.96);border:1px solid rgba(213,170,120,.45);border-radius:8px;padding:5px 10px}
-.brand-logo{display:block;width:auto;height:auto;object-fit:contain}
-.brand-logo-header{max-width:190px;max-height:46px}
-.brand-logo-footer{max-width:210px;max-height:52px}
-@media(max-width:700px){.brand-logo-wrap{padding:4px 7px}.brand-logo-header{max-width:125px;max-height:38px}.brand-logo-footer{max-width:150px;max-height:42px}}
+.brand-logo-wrap{display:inline-flex;align-items:center;width:max-content}
+.brand-logo{display:block;width:100%;height:auto;object-fit:contain;object-position:left center;filter:brightness(0) invert(1) sepia(.12) saturate(.75) drop-shadow(0 2px 6px rgba(0,0,0,.18))}
+.brand-logo-header{width:210px;max-width:210px;height:auto}
+.brand-logo-footer{width:230px;max-width:230px;height:auto}
+@media(max-width:700px){.brand-logo-header{width:135px;max-width:135px}.brand-logo-footer{width:170px;max-width:170px}}
 
 /* Mobile hero containment */
 @media(max-width:768px){
@@ -63,5 +63,5 @@ html,body{max-width:100%;overflow-x:hidden}
   .hero-facts{width:100%;max-width:100%;box-sizing:border-box;gap:16px;flex-wrap:wrap}
   .hero-facts li{max-width:100%}
 
-  .custom-photo>span{width:fit-content;max-width:78%;padding:10px 14px;border-radius:14px;font-size:clamp(16px,4.8vw,28px);line-height:1.2;text-align:center;top:10px;right:12px;left:auto;transform:none}
+  .custom-photo>span{width:fit-content;max-width:78%;font-size:clamp(18px,5.5vw,28px);line-height:1.2;text-align:center;top:1cm;right:12px;left:auto;transform:none}
 }
