@@ -1,0 +1,6 @@
+# Effective only when served at the hostname root /robots.txt.
+# A GitHub Pages project-subdirectory copy does not control github.io.
+User-agent: *
+Allow: /
+
+Sitemap: https://antonovaoksana.ru/sitemap.xml
