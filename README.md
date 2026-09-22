@@ -2,9 +2,10 @@
 
 This branch is a safe WordPress migration build. The live `main` branch is not changed.
 
-## First migration stage
+## Current migration stage
 - Existing HTML/CSS/JS is preserved.
-- Images are temporarily loaded from https://antonovaoksana.ru/assets/ so the Beget test site can match the live site before moving binary assets.
+- The complete `assets` folder is included inside the WordPress theme.
+- Images are loaded locally from the theme on Beget, not from GitHub Pages.
 - WordPress hooks are added for theme compatibility.
 
 ## Install
