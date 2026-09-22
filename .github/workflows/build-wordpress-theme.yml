@@ -1,0 +1,30 @@
+name: Build WordPress Theme ZIP
+
+on:
+  push:
+    branches:
+      - wordpress-theme-install
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build installable theme ZIP
+        shell: bash
+        run: |
+          rm -rf build antonova-theme.zip
+          mkdir -p build/antonova-theme
+          cp -a README.md assets favicon.ico front-page.php functions.php index.php script.js style.css build/antonova-theme/
+          cd build
+          zip -r ../antonova-theme.zip antonova-theme
+
+      - name: Upload theme ZIP
+        uses: actions/upload-artifact@v4
+        with:
+          name: antonova-theme
+          path: antonova-theme.zip
+          if-no-files-found: error
